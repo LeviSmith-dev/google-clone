@@ -3,7 +3,7 @@
 	<head>
 		<title>Google clone</title>
 
-		<link href="google_clone.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -11,9 +11,20 @@
 			<ul id="nav-right">
 				<li><a href="#">gmail</a></li>
 				<li><a href="#">images</a></li>
-				<li><input type="button" id="sign-in" Value="Sign In"/></li>
+				<li><input type="button" id="sign-in" value="Sign In"/></li>
+
 			</ul>
 
+			<script type="text/javascript">
+				function focusIt()
+				{
+					var my_search_box = document.getElementById("search-box");
+					my_search_box.focus();
+				}
+
+				onload = focusIt;
+
+			</script>
 		</header>
 
 		<div id="content">
@@ -22,7 +33,7 @@
 			</div>
 
 			<div id="search">
-			<input id="search_box" type="text" name="Search" />
+			<input id="search-box" type="text" name="search" />
 			</div>
 
 			<div id="search-buttons">
